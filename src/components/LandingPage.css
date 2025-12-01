@@ -1,0 +1,210 @@
+/* Landing Page Styles */
+
+.landing-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.landing-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Header Styles */
+.landing-header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.logo-icon {
+  font-size: 3rem;
+}
+
+.landing-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.landing-header .tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Role Selection */
+.role-selection {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.role-selection h2 {
+  text-align: center;
+  color: #333;
+  margin: 0 0 30px 0;
+  font-size: 1.5rem;
+}
+
+/* Role Cards Container */
+.role-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+@media (max-width: 700px) {
+  .role-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Role Card */
+.role-card {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card {
+  cursor: pointer;
+}
+
+.admin-card:hover {
+  border-color: #2563eb;
+}
+
+.partner-card:hover {
+  border-color: #10b981;
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.role-card h3 {
+  color: #333;
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+}
+
+.role-card p {
+  color: #666;
+  margin: 0 0 20px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Role Buttons */
+.role-btn {
+  width: 100%;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-btn {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+}
+
+.admin-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+}
+
+.partner-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.partner-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+}
+
+/* Delivery Select Container */
+.delivery-select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.delivery-select {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.delivery-select:focus {
+  outline: none;
+  border-color: #10b981;
+}
+
+.login-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.login-btn:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.login-btn:not(:disabled):hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+}
+
+/* Footer */
+.landing-footer {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  opacity: 0.9;
+}
+
+.landing-footer p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.landing-footer .version {
+  opacity: 0.7;
+  font-size: 0.85rem;
+}
