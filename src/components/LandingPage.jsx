@@ -94,7 +94,7 @@ function LandingPage() {
 
         {/* Footer */}
         <footer className="landing-footer">
-          <p>💡 Open browser console (F12) to see assignment logic details</p>
+         
           <p className="version">Poolify PoC v1.0</p>
         </footer>
       </div>
