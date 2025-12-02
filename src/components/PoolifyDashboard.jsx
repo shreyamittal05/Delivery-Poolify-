@@ -197,8 +197,8 @@ function PoolifyDashboard() {
       </div>
 
       <footer className="dashboard-footer">
-        <p>Poolify PoC - Intelligent Delivery Assignment System</p>
-        <p className="hint">💡 Open browser console to see assignment logic details</p>
+        <p>Poolify - Intelligent Delivery Assignment System</p>
+      
       </footer>
     </div>
   );
